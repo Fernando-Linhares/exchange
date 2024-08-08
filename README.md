@@ -10,4 +10,4 @@ GBY Exchange is an innovative cryptocurrency trading platform designed to provid
 - **Wide Range of Cryptocurrencies**: Access to a diverse selection of digital currencies and tokens.
 - **24/7 Customer Support**: Dedicated support team available around the clock to assist with any inquiries or issues.
 
-Join GBY Exchange today and take your cryptocurrency trading to the next level.
+Join GBY Exchange today and take your cryptocurrency trading to the next level. 

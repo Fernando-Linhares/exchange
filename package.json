@@ -19,9 +19,12 @@
         "vue": "^3.3.13"
     },
     "dependencies": {
-        "chart.js": "^4.4.3",
+        "apexcharts": "^3.52.0",
+        "dayjs": "^1.11.12",
         "laravel-echo": "^1.16.1",
         "pusher-js": "^8.4.0-rc2",
-        "trading-vue-js": "^1.0.2"
+        "trading-vue-js": "^1.0.2",
+        "vue-apexcharts": "^1.6.2",
+        "vue3-apexcharts": "^1.5.3"
     }
 }

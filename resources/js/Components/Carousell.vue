@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="mt-10 mx-28 bg-black/80 rounded text-white " style="height: 500px;">
+    <div class="mt-10 mx-28 bg-gradient-to-r from-sky-950 to-indigo-950 rounded-lg text-white " style="height: 500px;">
        <div class="grid grid-cols-6 py-10">
             <div class="col-span-4 px-8">
                 <h4 class="text-2xl text-center py-10">
@@ -18,7 +18,7 @@
                     <div class=" text-lg">
                         Come on buy cripto
                     </div>
-                    <button class="bg-red-700 text-md p-2 rounded text-white">
+                    <button class="bg-indigo-700 text-md p-2 rounded text-white">
                         Buy
                     </button>
                 </div>

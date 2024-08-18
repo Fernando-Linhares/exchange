@@ -195,17 +195,10 @@ console.log(props.quotation)
                 <div>
                     <div class="rounded space-y-10 max-sm:mt-20">
                         <div class="text-2xl text-center">
-                            Stacks is a production-rea
+                            Invista em Criptomoedas e Ativos Digitais na GBY Exchange
                         </div>
-                        <div class="text-md max-sm:text-lg max-sm:px-10 text-white/80 flex justify-center">
-                            Stacks is a production-rea stackable asdsStacks is a production-re <br>
-                            Stacks is a production-rea stackable asdsStacks is a production-re <br>
-                            Stacks is a production-rea stackable asdsStacks is a production-re <br>
-                            Stacks is a production-rea stackable asdsStacks is a production-re <br>
-                            Stacks is a production-rea stackable asdsStacks is a production-re <br>
-
-                            Stacks is a production-rea stackable asdsStacks is a production-re <br>
-                            asdsStacks is a production-re
+                        <div class="text-md max-sm:text-lg max-sm:px-10 text-white/80 flex justify-center mx-10">
+                            Descubra o futuro das finanças com a GBY Exchange, a plataforma cripto que conecta você aos melhores ativos digitais do mercado. Com segurança, transparência e uma variedade de criptomoedas à sua disposição, a GBY Exchange é o seu portal para o mundo cripto. Negocie com confiança, 24/7, e junte-se aos milhares de investidores que já estão construindo o futuro financeiro na GBY.
                         </div>
                     </div>
                 </div>

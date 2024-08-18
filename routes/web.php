@@ -20,7 +20,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
+    Route::get('/dashboard', function (GetCurrenctQuotation $getCurrenctQuotation) {
+        return Inertia::render('Dashboard', ['quotation' => $getCurrenctQuotation->get()]);
     })->name('dashboard');
 });

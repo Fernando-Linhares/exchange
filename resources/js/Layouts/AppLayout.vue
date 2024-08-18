@@ -8,6 +8,7 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import Footer from '@/Components/Footer.vue';
+import Notifications from '@/Components/Notifications.vue';
 
 defineProps({
     title: String,
@@ -114,7 +115,7 @@ const logout = () => {
                             </div>
 
                             <!-- Settings Dropdown -->
-                            <div class="ms-3 relative flex space-x-7">
+                            <div class="ms-3 relative flex space-x-7 items-center">
 
                                 <Dropdown align="right" width="48">
                                     <template #trigger>
@@ -157,11 +158,9 @@ const logout = () => {
                                         </form>
                                     </template>
                                 </Dropdown>
-                                <button class="bg-yellow-600 size-10 rounded-full text-white flex items-center justify-center">
-                                    <i class="material-icons">
-                                        notifications
-                                    </i>
-                                </button>
+                                <div class="flex items-center">
+                                   <Notifications :notifications="$page.props.auth.user.notifications" />
+                                </div>
                             </div>
                         </div>
 

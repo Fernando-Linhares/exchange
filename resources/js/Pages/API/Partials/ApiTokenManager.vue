@@ -142,7 +142,7 @@ const deleteApiToken = () => {
                     <template #content>
                         <div class="space-y-6">
                             <div v-for="token in tokens" :key="token.id" class="flex items-center justify-between">
-                                <div class="break-all">
+                                <div class="break-all text-white/60">
                                     {{ token.name }}
                                 </div>
 
@@ -181,7 +181,7 @@ const deleteApiToken = () => {
                     Please copy your new API token. For your security, it won't be shown again.
                 </div>
 
-                <div v-if="$page.props.jetstream.flash.token" class="mt-4 bg-gray-100 px-4 py-2 rounded font-mono text-sm text-gray-500 break-all">
+                <div v-if="$page.props.jetstream.flash.token" class="mt-4  bg-gradient-to-r from-sky-950 to-indigo-950 px-4 py-2 rounded font-mono text-sm text-gray-500 break-all">
                     {{ $page.props.jetstream.flash.token }}
                 </div>
             </template>

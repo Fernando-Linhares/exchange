@@ -2,7 +2,8 @@
 import { defineProps, reactive } from 'vue';
 
 const props = defineProps({
-    notifications: Array
+    notifications: Array,
+    active: Boolean,
 });
 
 const data = reactive({
@@ -14,7 +15,7 @@ const data = reactive({
     <div class=" text-right size-9">
         <div class="flex justify-center">
             <button class="size-10 rounded text-white flex items-center justify-center h-3/4" title="Notifications">
-                <i class="material-icons text-2xl" :class="{'text-orange-500': data.notifications.length > 0}">
+                <i class="material-icons text-2xl" :class="{'text-orange-500': data.notifications.length > 0, 'text-orange-600': props.active}">
                     notifications
                 </i>
             </button>

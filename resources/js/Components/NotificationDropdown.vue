@@ -1,5 +1,7 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue';
+import Notifications from './Notifications.vue';
+import Dropdown from './Dropdown.vue';
 
 const props = defineProps({
     align: {
@@ -12,8 +14,11 @@ const props = defineProps({
     },
     contentClasses: {
         type: Array,
-        default: () => ['py-1', 'bg-indigo-700'],
+        default: () => ['py-1', 'bg-indigo-900'],
     },
+    notifications: {
+        type: Array
+    }
 });
 
 let open = ref(false);
@@ -26,12 +31,6 @@ const closeOnEscape = (e) => {
 
 onMounted(() => document.addEventListener('keydown', closeOnEscape));
 onUnmounted(() => document.removeEventListener('keydown', closeOnEscape));
-
-const widthClass = computed(() => {
-    return {
-        '48': 'w-48',
-    }[props.width.toString()];
-});
 
 const alignmentClasses = computed(() => {
     if (props.align === 'left') {
@@ -49,7 +48,7 @@ const alignmentClasses = computed(() => {
 <template>
     <div class="relative">
         <div @click="open = ! open">
-            <slot name="trigger"/>
+            <Notifications :active="open" :notifications="props.notifications"/>
         </div>
 
         <!-- Full Screen Dropdown Overlay -->
@@ -66,12 +65,34 @@ const alignmentClasses = computed(() => {
             <div
                 v-show="open"
                 class="absolute z-50 mt-2 rounded-md shadow-lg"
-                :class="[widthClass, alignmentClasses]"
+                :class="['w-80', alignmentClasses]"
                 style="display: none;"
                 @click="open = false"
             >
                 <div class="rounded-md ring-1 ring-black ring-opacity-5" :class="contentClasses">
-                    <slot name="content" />
+                     <!-- Account Management -->
+                     <div class="block px-4 py-2 text-xs text-sky-400">
+                        Notifications
+                    </div>
+
+                    <div class="divide-y divide-sky-400">
+                        <div class="px-4 py-1 text-sky-400 flex justify-between text-sm cursor-pointer hover:bg-indigo-800">
+                            <i class="material-icons text-md">
+                                info
+                            </i>
+                            <div>
+                                title notifications 1
+                            </div>
+                        </div>
+                        <div class="px-4 py-1 text-sky-400 flex justify-between text-sm cursor-pointer hover:bg-indigo-800">
+                            <i class="material-icons">
+                                info
+                            </i>
+                            <div>
+                                title notifications 2
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </transition>

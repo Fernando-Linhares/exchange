@@ -109,7 +109,7 @@ const options = {
                                         keyboard_arrow_right
                                     </i>
                                 </div>
-                                <div class="block max-sm:space-y-4 space-x-4 max-sm:space-y-0">
+                                <div class="block space-x-4 max-sm:space-y-0">
                                     <input type="text" class="rounded-full text-sm p-1 text-gray-800" value="21.21">
                                     <button class="bg-teal-800 p-2 rounded">confirmar</button>
                                 </div>
@@ -131,7 +131,7 @@ const options = {
                                 <div class="flex items-center space-x-2">
                                     <div class="bg-slate-200 rounded-full text-gray-900 flex items-center p-2 ">
                                         *****************
-                                    </div>
+              w                      </div>
                                     <button class="p-2 bg-sky-700 rounded-full flex items-center max-sm:justify-center max-sm:size-10"><i class="material-icons">remove_red_eye</i></button>
                                 </div>
                             </div>
@@ -154,14 +154,13 @@ const options = {
                             <div class="flex items-center">
                                 <apexchart type="area" height="150" width="200"
                                 :options="options"
-
                                 :series="[{
                                         name: 'series1',
                                         data: [31, 40, 28, 51, 42, 109, 100]
                                     }]"></apexchart>
                             </div>
                         </div>
-                        <div class="grid grid-cols-5 max-sm:grid-cols-2 max-sm:grid-cols-3 max-sm:pl-6">
+                        <div class="grid grid-cols-5 max-sm:grid-cols-3 max-sm:pl-6">
                             <div class="flex items-center">
                                 <img class="size-8 max-sm:size-8 " src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lightning_Network.svg/2048px-Lightning_Network.svg.png">
                             </div>
@@ -186,7 +185,7 @@ const options = {
                                     }]"></apexchart>
                             </div>
                         </div>
-                        <div class="grid grid-cols-5 max-sm:grid-cols-2 max-sm:grid-cols-3 max-sm:pl-6">
+                        <div class="grid grid-cols-5 max-sm:grid-cols-3 max-sm:pl-6">
                             <div class="flex items-center">
                                 <img class="size-8 max-sm:size-8 " src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=032">
                             </div>
@@ -212,7 +211,7 @@ const options = {
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-5 max-sm:grid-cols-2 max-sm:grid-cols-3 max-sm:pl-6">
+                        <div class="grid grid-cols-5 max-sm:grid-cols-3 max-sm:pl-6">
                             <div class="flex items-center">
                                 <img class="size-8 max-sm:size-8"  src="https://cryptologos.cc/logos/solana-sol-logo.svg?v=032">
                             </div>
@@ -238,7 +237,7 @@ const options = {
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-5 max-sm:grid-cols-2 max-sm:grid-cols-3 max-sm:pl-6">
+                        <div class="grid grid-cols-5 max-sm:grid-cols-3 max-sm:pl-6">
                             <div class="flex items-center">
                                 <img class="size-8 max-sm:size-8" src="https://cryptologos.cc/logos/avalanche-avax-logo.svg?v=032">
                             </div>

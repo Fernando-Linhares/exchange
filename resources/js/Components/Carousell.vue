@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="mb-10 py-20 max-sm:rounded-none max-sm:mt-0 max-sm:h-full max-sm:w-full mt-10 max-sm:m-0 mx-10 bg-gradient-to-r from-sky-950 to-indigo-950 rounded-lg text-white ">
+    <div class="py-20 max-sm:rounded-none max-sm:mt-0 max-sm:h-full max-sm:w-full mt-10 max-sm:m-0 mx-10 bg-gradient-to-r from-sky-950 to-indigo-950 rounded-2xl text-white ">
        <div class="grid grid-cols-6 py-10 max-sm:py-3">
             <div class="col-span-4 px-8 max-sm:col-span-6">
                 <h4 class="text-3xl text-center py-10 max-sm:py-4 ">

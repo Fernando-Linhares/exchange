@@ -1,7 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
 import Carousell from '@/Components/Carousell.vue';
-import CandlestickChart from "@/Components/CandleStickChart.vue";
 import Footer from '@/Components/Footer.vue';
 import iconTrage from '@/assets/tading.png';
 import computer from '@/assets/computer.png';
@@ -27,7 +26,6 @@ const props = defineProps({
     }
 });
 
-console.log(props.quotation)
 </script>
 
 <template>
@@ -218,56 +216,6 @@ console.log(props.quotation)
             </div>
 
             </div>
-
-            <!-- <div class="pt-5">
-                <div class="grid grid-cols-7 mt-10 divide-x divide-indigo-800  bg-gradient-to-r from-sky-950 to-indigo-950">
-                    <div class="text-white font-sm col-span-2 pl-10  py-20 max-sm:pl-0 divide-y divide-gray-900 max-sm:col-span-7" >
-                        <div class="max-sm:mx-5 max-sm:text-lg max-sm:p-4 flex space-x-4 p-2 items-center hover:lg:bg-indigo-800 rounded-l cursor-pointer" :class="{'lg:bg-indigo-800': true}">
-                            <div class="max-sm:hidden">Bitcoin</div> <svg class="size-4 max-sm:size-8"  viewBox="0.004 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M63.04 39.741c-4.274 17.143-21.638 27.575-38.783 23.301C7.12 58.768-3.313 41.404.962 24.262 5.234 7.117 22.597-3.317 39.737.957c17.144 4.274 27.576 21.64 23.302 38.784z" fill="#f7931a"></path><path d="M46.11 27.441c.636-4.258-2.606-6.547-7.039-8.074l1.438-5.768-3.512-.875-1.4 5.616c-.922-.23-1.87-.447-2.812-.662l1.41-5.653-3.509-.875-1.439 5.766c-.764-.174-1.514-.346-2.242-.527l.004-.018-4.842-1.209-.934 3.75s2.605.597 2.55.634c1.422.355 1.68 1.296 1.636 2.042l-1.638 6.571c.098.025.225.061.365.117l-.37-.092-2.297 9.205c-.174.432-.615 1.08-1.609.834.035.051-2.552-.637-2.552-.637l-1.743 4.02 4.57 1.139c.85.213 1.683.436 2.502.646l-1.453 5.835 3.507.875 1.44-5.772c.957.26 1.887.5 2.797.726L27.504 50.8l3.511.875 1.453-5.823c5.987 1.133 10.49.676 12.383-4.738 1.527-4.36-.075-6.875-3.225-8.516 2.294-.531 4.022-2.04 4.483-5.157zM38.087 38.69c-1.086 4.36-8.426 2.004-10.807 1.412l1.928-7.729c2.38.594 10.011 1.77 8.88 6.317zm1.085-11.312c-.99 3.966-7.1 1.951-9.083 1.457l1.748-7.01c1.983.494 8.367 1.416 7.335 5.553z" fill="#ffffff"></path></g></svg>
-
-                        </div>
-                        <div class="max-sm:mx-5 max-sm:text-lg max-sm:p-4 flex space-x-4 p-2 items-center hover:lg:bg-indigo-800 rounded-l cursor-pointer" >
-                            <div class="max-sm:hidden">Lignting</div> <img class="size-4 max-sm:size-8 " src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lightning_Network.svg/2048px-Lightning_Network.svg.png">
-                            <div class="text-white/80 text-sm max-sm:text-lg" >LHT/USD 46,168.95</div>
-                            <div class="text-green-600 text-sm max-sm:text-lg">
-                                +0.23%
-                            </div>
-                        </div>
-                        <div class="max-sm:mx-5 max-sm:text-lg max-sm:p-4 flex space-x-4 p-2 items-center hover:lg:bg-indigo-800 rounded-l cursor-pointer">
-                            <div class="max-sm:hidden">Ethereum</div> <img class="size-4 max-sm:size-8 " src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=032">
-                            <div class="text-white/80 text-sm max-sm:text-lg" >ETH/USD 46,168.95</div>
-                            <div class="text-red-600 text-sm max-sm:text-lg">
-                                -2.7%
-                            </div>
-                        </div>
-                        <div class="max-sm:mx-5 max-sm:text-lg max-sm:p-4 flex space-x-4 p-2 items-center hover:lg:bg-indigo-800 rounded-l cursor-pointer">
-                            <div class="max-sm:hidden">Solana</div> <img class="size-4 max-sm:size-8"  src="https://cryptologos.cc/logos/solana-sol-logo.svg?v=032">
-                            <div class="text-white/80 text-sm max-sm:text-lg" >SOL/USD 46,168.95</div>
-                            <div class="text-red-600 text-sm max-sm:text-lg">
-                                -2.7%
-                            </div>
-                        </div>
-                        <div class="max-sm:mx-5 max-sm:text-lg max-sm:p-4 flex space-x-4 p-2 items-center hover:lg:bg-indigo-800 rounded-l cursor-pointer">
-                            <div class="max-sm:hidden">Avalanche</div> <img class="size-4 max-sm:size-8" src="https://cryptologos.cc/logos/avalanche-avax-logo.svg?v=032">
-                            <div class="text-white/80 text-sm max-sm:text-lg" >AVAX/USD 46,168.95</div>
-                            <div class="text-green-600 text-sm max-sm:text-lg">
-                                +0.23%
-                            </div>
-                        </div>
-                        <div class="flex justify-center space-x-2 pt-10">
-                            <a href="" class="size-6 max-sm:size-10 flex items-center justify-center rounded-lg text-lg text-white bg-indigo-800 hover:bg-indigo-700 ">1</a>
-                            <a href="" class="size-6 max-sm:size-10 flex items-center justify-center rounded-lg text-lg text-white bg-indigo-800 hover:bg-indigo-700 ">2</a>
-                            <a href="" class="size-6 max-sm:size-10 flex items-center justify-center rounded-lg text-lg text-white bg-indigo-800 hover:bg-indigo-700 ">3</a>
-                            <a href="" class="size-6 max-sm:size-10 flex items-center justify-center rounded-lg text-lg text-white bg-indigo-800 hover:bg-gray-700 ">></a>
-                        </div>
-                    </div>
-                    <div class="text-white font-sm col-span-5 p-8 max-sm:hidden">
-                        <div style="height: 400px;" class="bg-slate-900 rounded p-4 ">
-                            <CandlestickChart :quotation="props.quotation" ></CandlestickChart>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="text-white max-sm:hidden flex w-full my-60 bg-slate-900 py-20 justify-center items-center">
                 <div>
                     <div class="text-center text-3xl">

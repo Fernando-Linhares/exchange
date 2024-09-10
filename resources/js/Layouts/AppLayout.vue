@@ -32,9 +32,7 @@ const logout = () => {
 <template>
     <div>
         <Head :title="title" />
-
         <Banner />
-
         <div class="min-h-screen bg-gray-950">
             <nav class="shadow-lg bg-gradient-to-r from-sky-950 to-indigo-950">
                 <!-- Primary Navigation Menu -->
@@ -53,13 +51,12 @@ const logout = () => {
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Cotaçoes
                                 </NavLink>
-                                <NavLink :href="route('dashboard')" :active="route().current('draw')">
-                                    Minhas Compras
+                                <NavLink :href="route('deposit')" :active="route().current('deposit')">
+                                    Depositar
                                 </NavLink>
-                                <NavLink :href="route('dashboard')" :active="route().current('draw')">
-                                    Tendências
+                                <NavLink :href="route('wallet')" :active="route().current('mywallet')">
+                                    Carteira
                                 </NavLink>
-
                             </div>
                         </div>
 

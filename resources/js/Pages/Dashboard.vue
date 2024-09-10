@@ -202,8 +202,5 @@ const options = {
             </div>
             </div>
         </Container>
-
-
-
     </AppLayout>
 </template>

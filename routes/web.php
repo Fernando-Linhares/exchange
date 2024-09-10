@@ -23,4 +23,7 @@ Route::middleware([
     Route::get('/dashboard', function (GetCurrenctQuotation $getCurrenctQuotation) {
         return Inertia::render('Dashboard', ['quotation' => $getCurrenctQuotation->get()]);
     })->name('dashboard');
+    Route::get('/wallet', fn()=> Inertia::render('Wallet'))->name('wallet');
+    Route::get('/exchange', fn()=> Inertia::render('Exchange'))->name('exchange');
+    Route::get('/deposit', fn()=> Inertia::render('Deposit'))->name('deposit');
 });
